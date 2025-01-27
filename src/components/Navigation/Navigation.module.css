@@ -1,0 +1,26 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.titles {
+	display: flex;
+	gap: 46px;
+	align-items: center;
+	justify-content: center;
+	padding-top: 12px;
+}
+
+.titles a {
+	cursor: pointer;
+	position: relative;
+	padding: 5px 10px; /* Добавляем немного внутреннего отступа для улучшения видимости */
+	transition: all 0.3s ease;
+}
+
+.titles a.active {
+	background-color: #a1adf5; /* Цвет заливки */
+	border-radius: 19px; /* Скругленные углы */
+}

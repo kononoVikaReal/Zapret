@@ -1,0 +1,151 @@
+.cardContainer {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(350px, 400px));
+	gap: 20px;
+	padding: 20px;
+	justify-content: center;
+}
+
+.card {
+	background-color: white;
+	border-radius: 16px;
+	border: 2px solid;
+	padding: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes borderGradientAnimationWindows {
+	0% {
+		border-color: #1e0d59; /* Purple primary */
+	}
+	50% {
+		border-color: #1d97f4fc; /* Pink secondary */
+	}
+	100% {
+		border-color: #1e0d59; /* Purple primary */
+	}
+}
+
+@keyframes borderGradientAnimationLinux {
+	0% {
+		border-color: #d600aa; /* Purple primary */
+	}
+	50% {
+		border-color: #c96ab5; /* Pink secondary */
+	}
+	100% {
+		border-color: #d600aa; /* Purple primary */
+	}
+}
+
+.windows {
+	border: 3px solid #512bd4; /* Start with the purple color */
+	color: #512bd4;
+	animation: borderGradientAnimationWindows 10s ease infinite;
+}
+
+.linux {
+	border: 3px solid #d600aa; /* Start with the purple color */
+	color: #d600aa;
+	animation: borderGradientAnimationLinux 10s ease infinite;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 12px 0;
+}
+
+.description {
+	font-size: 1rem;
+	margin: 4px 0 36px;
+	color: white;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 14px;
+}
+
+.button {
+	display: inline-block;
+	padding: 8px 16px;
+	color: white;
+	border-radius: 8px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: #005a9e;
+}
+
+.buttonCard {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.version {
+	color: #0f042c;
+}
+
+.windowsButton {
+	background-color: #512bd4;
+}
+
+.linuxButton {
+	background-color: #d600aa;
+}
+
+.linuxButton:hover {
+	background-color: #fd0585;
+}
+
+@keyframes gradientAnimationWindows {
+	0% {
+		background: rgb(81, 43, 212); /* Исходный цвет */
+	}
+	50% {
+		background: rgb(214, 0, 170); /* Промежуточный цвет */
+	}
+	100% {
+		background: rgb(81, 43, 212); /* Возвращаемся к исходному */
+	}
+}
+
+@keyframes gradientAnimationLinux {
+	0% {
+		background: rgb(116 85 221 / 1);
+	}
+	50% {
+		background: rgb(67 150 233 / 1); /* Можно изменить для эффекта */
+	}
+	100% {
+		background: rgb(116 85 221 / 1);
+	}
+}
+
+.windowsDesc {
+	animation: gradientAnimationWindows 5s ease infinite;
+	background-size: 200% 200%; /* Увеличиваем размер для плавной анимации */
+}
+
+.linuxDesc {
+	animation: gradientAnimationLinux 5s ease infinite;
+	background-size: 200% 200%;
+}
+
+.footer {
+	margin-top: 30px;
+	color: rgb(116 85 221 / 1);
+	text-decoration: underline;
+}

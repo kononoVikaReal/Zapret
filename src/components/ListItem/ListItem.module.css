@@ -1,0 +1,30 @@
+.item {
+	display: flex;
+	align-items: center; /* Выравниваем текст по верху */
+	gap: 8px; /* Расстояние между кружком и текстом */
+}
+
+.circle {
+	flex-shrink: 0; /* Фиксируем размер кружка */
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #000080;
+}
+
+.text {
+	display: flex;
+	flex-direction: column; /* Текст располагается в колонку */
+}
+
+.markedWord {
+	font-weight: bold;
+	color: #000080;
+	text-decoration: underline; /* Подчеркиваем ключевые слова */
+}
+
+.desc {
+	color: #333;
+	font-size: 14px;
+	line-height: 1.5;
+}

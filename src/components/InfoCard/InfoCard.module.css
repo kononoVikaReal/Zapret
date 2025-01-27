@@ -1,0 +1,84 @@
+.card {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	background: #d1d4ff;
+	border-radius: 16px;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 500px;
+	padding: 30px;
+	gap: 2px;
+	justify-items: center;
+	opacity: 0;
+	transform: scale(0.95);
+	animation: slideIn 1s ease-out forwards;
+}
+
+.h1,
+.h2,
+.additional {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeInText 1s ease-out forwards;
+}
+
+.h1 {
+	font-weight: bold;
+	font-size: 23px;
+	animation-delay: 0.5s;
+}
+
+.h2 {
+	font-weight: normal;
+	font-size: 18px;
+	animation-delay: 1s;
+}
+
+/* Анимация для карточки */
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* Анимация для текста */
+@keyframes fadeInText {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Для контейнера картинок (эффект увеличения при наведении) */
+.card img {
+	transition: transform 0.3s ease;
+}
+
+.card img:hover {
+	transform: rotate(10deg) scale(1.05);
+}
+
+.additional {
+	background: #e5e8fc;
+	font-weight: 200;
+	border-radius: 19px;
+	padding: 10px;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+
+.gap {
+	display: grid;
+	gap: 10px;
+}

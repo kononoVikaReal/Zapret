@@ -1,0 +1,29 @@
+.h1 {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.p {
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.header {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 50%;
+	width: max-content;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+	gap: 34px; /* Расстояние между элементами */
+	padding: 16px;
+	background-color: #f5f7ff;
+	border-radius: 8px;
+}
+
+.underlinedWord {
+	text-decoration: underline;
+}

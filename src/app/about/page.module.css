@@ -1,0 +1,60 @@
+.h1 {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.p {
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.underlined {
+	font-weight: medium;
+	font-size: 20px;
+	margin: 0 50%;
+	width: max-content;
+	text-decoration: underline;
+}
+
+.DPI {
+	display: flex;
+	justify-content: space-around;
+	gap: 60px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.example {
+	border-radius: 16px;
+	font-size: medium;
+	font-weight: 100;
+	padding: 10px;
+	background: #ffffff;
+}
+
+.leftList {
+	display: grid;
+	gap: 9px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+	gap: 34px; /* Расстояние между элементами */
+	padding: 16px;
+	background-color: #f5f7ff;
+	border-radius: 8px;
+}
+
+.underlinedWord {
+	text-decoration: underline;
+}
+
+.header {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 50%;
+	width: max-content;
+}
