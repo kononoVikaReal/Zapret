@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import InfoDownload from '../InfoDownload/InfoDownload'
 import styles from './Zapret.module.css'

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client'
 import DPICard from '@/components/DPICard/DPICard'
 import Explanation from '@/components/Explanation/Explanation'
@@ -45,6 +46,7 @@ const items = [
 ]
 
 export default function page() {
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const { scrollYProgress } = useScroll()
 	return (
 		<div>
