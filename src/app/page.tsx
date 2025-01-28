@@ -1,7 +1,7 @@
 import Advantage from '@/components/Advantage/Advantage'
 import DownloadCard from '@/components/DownloadCard/DownloadCard'
 import InfoCard from '@/components/InfoCard/InfoCard'
-import Zapret from '@/components/ZapretInfo/Zapret'
+import Zapret from '@/components/Zapret/Zapret'
 import * as motion from 'framer-motion/client'
 import styles from './page.module.css'
 

@@ -24,3 +24,25 @@
 	background-color: #a1adf5; /* Цвет заливки */
 	border-radius: 19px; /* Скругленные углы */
 }
+
+.image {
+	position: relative;
+	overflow: hidden;
+	width: 150px;
+	height: 55px;
+}
+
+@media (max-width: 768px) {
+	.titles {
+		font-size: 10px;
+		gap: 7px;
+		padding-top: 7px;
+	}
+	.image {
+		width: 70px;
+		height: 30px;
+	}
+	.nav {
+		gap: 6px;
+	}
+}

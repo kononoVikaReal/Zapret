@@ -15,12 +15,9 @@ export default function Navigation() {
 
 	return (
 		<div className={styles.nav}>
-			<Image
-				src='/Zapret logo.png'
-				alt='Zapret logo'
-				height={113}
-				width={150}
-			/>
+			<div className={styles.image}>
+				<Image src='/Zapret logo.png' alt='Zapret logo' fill />
+			</div>
 			<div className={styles.titles}>
 				<Link href='/' className={activeLink === '/' ? styles.active : ''}>
 					Главная

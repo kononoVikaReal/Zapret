@@ -77,7 +77,7 @@ export default function page() {
 			/>
 			<InfoCard
 				props={{
-					title: 'Youtube и Discord',
+					title: 'YouTube и Discord',
 					desc: 'Ютуб и дискорд не работает через запрет ',
 					imgUrl: '/attention.svg',
 					imgAlt: 'attention logo',
