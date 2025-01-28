@@ -149,3 +149,9 @@
 	color: rgb(116 85 221 / 1);
 	text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+	.cardContainer {
+		grid-template-columns: repeat(1, minmax(250px, 330px));
+	}
+}
