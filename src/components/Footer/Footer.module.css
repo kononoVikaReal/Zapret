@@ -29,5 +29,46 @@
 
 .zapret {
 	justify-content: center;
-	padding: 20px;
+}
+
+.imageContainer1 {
+	width: 14%; /* Задайте ширину контейнера */
+	display: flex;
+	margin-left: 25px;
+	align-items: center;
+}
+
+.imageContainer2 {
+	width: 25%; /* Задайте ширину контейнера */
+}
+
+.imageContainer3 {
+	width: 20%; /* Задайте ширину контейнера */
+}
+
+@media (max-width: 768px) {
+	.footer {
+		height: 51px;
+	}
+	.a {
+		font-size: 14px;
+	}
+	.imageContainer1 {
+		width: 120px;
+		margin-left: 10px;
+		margin-bottom: 8px;
+	}
+	.imageContainer2 {
+		width: 33px;
+	}
+	.imageContainer3 {
+		width: 35px;
+	}
+	.social {
+		gap: 5px;
+	}
+	.socialTitles {
+		padding-right: 8px;
+		gap: 11px;
+	}
 }
