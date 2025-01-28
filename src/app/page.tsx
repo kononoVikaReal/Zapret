@@ -83,6 +83,7 @@ export default function Home() {
 				variants={textAnimation}
 				whileHover={{ scale: 1.05 }}
 				whileTap={{ scale: 0.95 }}
+				className={styles.advantagesGrid}
 			>
 				<Advantage advantages={advantages} />
 			</motion.div>

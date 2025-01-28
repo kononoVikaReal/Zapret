@@ -8,3 +8,13 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 20px;
+	}
+	.advantagesGrid {
+		display: grid;
+		justify-content: center;
+	}
+}
