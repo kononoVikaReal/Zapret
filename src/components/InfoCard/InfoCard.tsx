@@ -5,7 +5,15 @@ import { InfoCardProps } from './InfoCard.props'
 export default function InfoCard({ props }: { props: InfoCardProps }) {
 	return (
 		<div className={styles.card}>
-			<Image src={props.imgUrl} alt={props.imgAlt} width={120} height={140} />
+			<div className={styles.imageContainer}>
+				<Image
+					src={props.imgUrl}
+					alt={props.imgAlt}
+					layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+					width={120} // Фиксированная ширина
+					height={140} // Фиксированная высота
+				/>
+			</div>
 			<div className={styles.gap}>
 				<h1 className={styles.h1}>{props.title}</h1>
 				<h2 className={styles.h2}>{props.desc}</h2>

@@ -82,3 +82,27 @@
 	display: grid;
 	gap: 10px;
 }
+
+.imageContainer {
+	width: 80%; /* Задайте ширину контейнера */
+}
+
+@media (max-width: 768px) {
+	.card {
+		margin: 20px 20px;
+		grid-template-columns: 1fr 5fr;
+		padding: 20px;
+		gap: 15px;
+		opacity: 1;
+		animation: none;
+	}
+	.h1 {
+		font-size: 17px;
+	}
+	.h2 {
+		font-size: 15px;
+	}
+	.imageContainer {
+		width: 100%; /* Задайте ширину контейнера */
+	}
+}
