@@ -14,3 +14,9 @@
 	gap: 20px;
 	margin-top: 73px;
 }
+
+@media (max-width: 1920px) {
+	.explanation {
+		max-width: 100%;
+	}
+}

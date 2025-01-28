@@ -28,3 +28,13 @@
 	font-size: 14px;
 	line-height: 1.5;
 }
+
+@media (min-width: 2100px) {
+	.text {
+		font-size: 28px;
+	}
+	.circle {
+		width: 24px;
+		height: 24px;
+	}
+}
