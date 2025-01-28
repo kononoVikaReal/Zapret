@@ -23,12 +23,15 @@ export default function Zapret() {
 				</h3>
 				<InfoDownload />
 			</div>
-			<Image
-				src='/Zapret bigLogo.png'
-				alt='Zapret logo'
-				width={390}
-				height={390}
-			/>
+			<div className={styles.imageContainer}>
+				<Image
+					src='/Zapret bigLogo.png'
+					alt='Zapret logo'
+					layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+					width={390} // Фиксированная ширина
+					height={390} // Фиксированная высота
+				/>
+			</div>
 		</div>
 	)
 }
