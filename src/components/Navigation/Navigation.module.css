@@ -32,7 +32,17 @@
 	height: 55px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1953px) {
+	.titles {
+		font-size: 28px;
+	}
+	.image {
+		width: 200px;
+		height: 70px;
+	}
+}
+
+@media (max-width: 767px) {
 	.titles {
 		font-size: 10px;
 		gap: 7px;
@@ -44,5 +54,24 @@
 	}
 	.nav {
 		gap: 6px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.image {
+		width: 200px;
+		height: 70px;
+	}
+	.titles {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 400px) {
+	.titles {
+		font-size: 10px;
+	}
+	.image {
+		display: none;
 	}
 }

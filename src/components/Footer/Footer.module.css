@@ -13,14 +13,14 @@
 }
 
 .social {
-	font-size: 24px;
+	font-size: 28px;
 	display: flex;
 	align-items: center;
 	gap: 22px;
 }
 
 .socialTitles {
-	font-size: 24px;
+	font-size: 28px;
 	display: flex;
 	align-items: center;
 	gap: 22px;
@@ -32,18 +32,18 @@
 }
 
 .imageContainer1 {
-	width: 14%; /* Задайте ширину контейнера */
+	width: 34%; /* Задайте ширину контейнера */
 	display: flex;
 	margin-left: 25px;
 	align-items: center;
 }
 
 .imageContainer2 {
-	width: 25%; /* Задайте ширину контейнера */
+	width: 100%; /* Задайте ширину контейнера */
 }
 
 .imageContainer3 {
-	width: 20%; /* Задайте ширину контейнера */
+	width: 100%; /* Задайте ширину контейнера */
 }
 
 @media (max-width: 768px) {
@@ -56,7 +56,7 @@
 	.imageContainer1 {
 		width: 120px;
 		margin-left: 10px;
-		margin-bottom: 8px;
+		margin-bottom: 5px;
 	}
 	.imageContainer2 {
 		width: 33px;
@@ -70,5 +70,57 @@
 	.socialTitles {
 		padding-right: 8px;
 		gap: 11px;
+	}
+}
+
+@media (max-width: 400px) {
+	.imageContainer1 {
+		margin-bottom: 5px;
+	}
+	.imageContainer2 {
+		width: 25px;
+	}
+	.imageContainer3 {
+		width: 30px;
+	}
+}
+
+@media (min-width: 767px) {
+	.imageContainer1 {
+		width: 255px;
+		margin-bottom: 10px;
+	}
+	.imageContainer2 {
+		width: 55px;
+	}
+	.imageContainer3 {
+		width: 55px;
+	}
+	.socialTitles {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 1953px) {
+	.a {
+		font-size: 38px;
+	}
+	.imageContainer1 {
+		width: 300px;
+		margin-left: 20px;
+		margin-bottom: 7px;
+	}
+	.imageContainer2 {
+		width: 63px;
+	}
+	.imageContainer3 {
+		width: 65px;
+	}
+	.social {
+		gap: 20px;
+	}
+	.socialTitles {
+		padding-right: 25px;
+		gap: 25px;
 	}
 }

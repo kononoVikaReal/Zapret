@@ -2,7 +2,7 @@
 	display: grid; /* Используем Grid */
 	grid-template-columns: repeat(
 		auto-fit,
-		minmax(368px, 1fr)
+		minmax(298px, 1fr)
 	); /* Автоматическое количество колонок */
 	gap: 20px; /* Задаём расстояние между карточками */
 	justify-items: center; /* Центруем сетку по горизонтали */
@@ -47,4 +47,17 @@
 .advantage_card:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 1953px) {
+	.h3 {
+		font-size: 32px;
+	}
+	.p {
+		font-size: 26px;
+	}
+	.advantage_card {
+		max-width: 500px;
+		height: 650px;
+	}
 }

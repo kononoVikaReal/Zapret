@@ -87,7 +87,7 @@
 	width: 80%; /* Задайте ширину контейнера */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
 	.card {
 		margin: 20px 20px;
 		grid-template-columns: 1fr 5fr;
@@ -104,5 +104,77 @@
 	}
 	.imageContainer {
 		width: 100%; /* Задайте ширину контейнера */
+	}
+}
+
+@media (max-width: 1373px) {
+	.card {
+		margin: 20px 50px;
+	}
+}
+
+@media (max-width: 1700px) {
+	.card {
+		margin: 20px 330px;
+	}
+	.imageContainer {
+		width: 40%; /* Задайте ширину контейнера */
+	}
+}
+
+@media (min-width: 1953px) {
+	.card {
+		margin-top: 50px;
+	}
+	.h1 {
+		font-size: 33px;
+	}
+	.h2 {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 2300px) {
+	.h1 {
+		font-size: 45px;
+	}
+	.h2 {
+		font-size: 30px;
+	}
+	.imageContainer {
+		width: 60%; /* Задайте ширину контейнера */
+	}
+}
+
+@media (max-width: 1230px) {
+	.card {
+		margin: 20px 170px;
+	}
+}
+
+@media (max-width: 800px) {
+	.card {
+		margin: 20px 30px;
+	}
+	.h1 {
+		font-size: 24px;
+	}
+	.h2 {
+		font-size: 14px;
+	}
+	.imageContainer {
+		width: 100%; /* Задайте ширину контейнера */
+	}
+}
+
+@media (max-width: 360px) {
+	.card {
+		margin: 20px 5px;
+	}
+	.h1 {
+		font-size: 20px;
+	}
+	.h2 {
+		font-size: 12px;
 	}
 }

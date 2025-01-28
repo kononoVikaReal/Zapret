@@ -47,9 +47,26 @@
 	width: 34%; /* Задайте ширину контейнера */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1953px) {
 	.card {
-		width: 400px;
+		width: 1580px;
+	}
+	.h1 {
+		font-size: 64px;
+	}
+	.h2 {
+		font-size: 25px;
+		width: 800px;
+	}
+	.h3 {
+		font-size: 20px;
+		width: 800px;
+	}
+}
+
+@media (max-width: 1190px) {
+	.card {
+		width: 780px;
 		flex-direction: column;
 	}
 	.h1,
@@ -62,11 +79,32 @@
 	}
 	.h2,
 	.h3 {
-		font-size: 10px;
-		width: 325px;
+		font-size: 16px;
+		width: 700px;
 	}
 	.info {
 		gap: 0;
 		padding: 0;
+		align-items: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.card {
+		width: 400px;
+	}
+	.h1 {
+		font-size: 28px;
+	}
+	.h2,
+	.h3 {
+		font-size: 10px;
+		width: 325px;
+	}
+}
+
+@media (max-width: 397px) {
+	.card {
+		width: 340px;
 	}
 }

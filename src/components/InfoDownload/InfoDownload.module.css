@@ -24,8 +24,24 @@
 	align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1953px) {
 	.background {
-		display: none;
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 1190px) {
+	.background {
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.background {
+		padding: 7px;
+		font-size: 10px;
+	}
+	.download {
+		padding: 6px;
 	}
 }

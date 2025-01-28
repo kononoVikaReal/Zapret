@@ -150,7 +150,30 @@
 	text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1953px) {
+	.cardContainer {
+		grid-template-columns: repeat(2, minmax(550px, 680px));
+		height: 500px;
+		font-size: 26px;
+	}
+	.title {
+		font-size: 3rem;
+	}
+	.description {
+		font-size: 25px;
+	}
+	.button {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 921px) {
+	.cardContainer {
+		grid-template-columns: repeat(2, minmax(330px, 335px));
+	}
+}
+
+@media (max-width: 767px) {
 	.cardContainer {
 		grid-template-columns: repeat(1, minmax(250px, 330px));
 	}
