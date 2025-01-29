@@ -13,7 +13,6 @@ const JetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
 	title: 'Zapret',
 	description: 'Zapret - обходы блокировок',
-	viewport: 'width=device-width, initial-scale=1.0',
 }
 
 export default function RootLayout({

@@ -66,57 +66,7 @@
 }
 
 .imageContainer {
-	width: 80%; /* Задайте ширину контейнера */
 }
-
-/* @media (min-width: 2100px) {
-	.h1 {
-		font-size: 62px;
-	}
-	.p {
-		font-size: 20px;
-	}
-}
-
-@media (min-width: 2400px) {
-	.p,
-	.bold,
-	.example {
-		font-size: 24px;
-	}
-	.underlined {
-		font-size: 28px;
-	}
-	.header {
-		font-size: 30px;
-	}
-}
-
-@media (max-width: 1020px) {
-	.p {
-		font-size: 14px;
-		padding: 0 100px;
-	}
-	.underlined {
-		font-size: 20px;
-	}
-	.bold {
-		font-size: 20px;
-	}
-	.example {
-		font-size: 20px;
-	}
-	.header {
-		font-size: 24px;
-	}
-}
-
-@media (max-width: 800px) {
-	.p {
-		font-size: 10px;
-		padding: 0 250px;
-	}
-} */
 
 @media (max-width: 1400px) {
 	.example {
@@ -238,9 +188,27 @@
 	}
 }
 
+@media (min-width: 100px) {
+	.imageContainer {
+		width: 150px;
+	}
+}
+
+@media (min-width: 280px) {
+	.imageContainer {
+		width: 250px;
+	}
+}
+
+@media (min-width: 560px) {
+	.imageContainer {
+		width: 500px;
+	}
+}
+
 @media (min-width: 1000px) {
 	.imageContainer {
-		width: 60%;
+		width: 600px;
 	}
 }
 
@@ -262,7 +230,7 @@
 		font-size: 24px;
 	}
 	.imageContainer {
-		width: 40%;
+		width: 800px;
 	}
 	.container {
 		width: 60vw;
@@ -282,5 +250,8 @@
 	}
 	.bold {
 		font-size: 30px;
+	}
+	.imageContainer {
+		width: 900px;
 	}
 }
