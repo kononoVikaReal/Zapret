@@ -27,3 +27,148 @@
 .underlinedWord {
 	text-decoration: underline;
 }
+
+/* Адаптивные стили */
+@media (max-width: 1250px) {
+	.h1 {
+		font-size: 36px;
+		text-align: center;
+	}
+	.p {
+		font-size: 14px;
+	}
+	.container {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+}
+
+@media (max-width: 900px) {
+	.p {
+		font-size: 14px;
+		line-height: 1.4;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		max-width: 100%;
+		padding: 0 40px;
+		box-sizing: border-box;
+		text-align: justify;
+	}
+	.container {
+		grid-template-columns: 1fr;
+		width: 60vw;
+		justify-content: center;
+		padding: 16px;
+		gap: 16px;
+	}
+	.underlined {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 826px) {
+	.h1 {
+		font-size: 32px;
+	}
+	.example {
+		font-size: 0.9rem;
+		padding: 8px;
+	}
+}
+
+@media (max-width: 670px) {
+	.h1 {
+		font-size: 28px;
+		text-align: center;
+	}
+	.p {
+		font-size: 12px;
+		text-align: justify;
+		padding: 0 70px;
+		width: 90vw;
+	}
+	.underlined {
+		font-size: 12px;
+	}
+	.container {
+		padding: 8px;
+		gap: 10px;
+	}
+	.example {
+		width: 80vw;
+		font-size: 0.8rem;
+		padding: 6px;
+	}
+}
+
+@media (max-width: 480px) {
+	.p {
+		font-size: 10px;
+		word-wrap: break-word;
+		padding: 0 20px;
+	}
+	.header {
+		font-size: 12px;
+		width: 100vw;
+		word-wrap: break-word;
+		padding: 0 20vw;
+		text-align: center;
+	}
+	.underlined {
+		text-align: center;
+		font-size: 10px;
+		width: 100vw;
+		word-wrap: break-word;
+		padding: 0 20px;
+	}
+	.example {
+		word-wrap: break-word;
+	}
+	.h1 {
+		font-size: 18px;
+		text-align: center;
+		width: 90vw;
+	}
+	.bold {
+		width: 80vw;
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.p {
+		font-size: 20px;
+	}
+	.bold {
+		font-size: 28px;
+	}
+	.example {
+		font-size: 24px;
+		text-align: center;
+	}
+	.underlined {
+		font-size: 24px;
+	}
+	.header {
+		font-size: 24px;
+	}
+	.container {
+		width: 60vw;
+	}
+}
+
+@media (min-width: 2100px) {
+	.p {
+		font-size: 24px;
+		padding: 0 20px;
+	}
+	.underlined {
+		font-size: 28px;
+	}
+	.header {
+		font-size: 32px;
+	}
+	.bold {
+		font-size: 30px;
+	}
+}

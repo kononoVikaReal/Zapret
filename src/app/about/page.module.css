@@ -65,9 +65,6 @@
 	width: max-content;
 }
 
-.imageContainer {
-}
-
 @media (max-width: 1400px) {
 	.example {
 		text-align: center;

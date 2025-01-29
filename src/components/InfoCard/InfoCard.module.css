@@ -123,10 +123,6 @@
 }
 
 @media (min-width: 1900px) {
-	.card {
-		margin-top: 50px;
-		width: 900px;
-	}
 	.h1 {
 		font-size: 32px;
 	}
@@ -140,10 +136,6 @@
 }
 
 @media (min-width: 2300px) {
-	.card {
-		width: 1300px;
-		margin-left: 700px;
-	}
 	.h1 {
 		font-size: 45px;
 	}

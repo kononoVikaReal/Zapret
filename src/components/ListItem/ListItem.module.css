@@ -30,12 +30,12 @@
 }
 
 @media (min-width: 1440px) {
-	.text {
-		font-size: 20px;
-	}
 	.circle {
 		width: 26px;
 		height: 26px;
+	}
+	.text {
+		font-size: 18px;
 	}
 }
 
@@ -45,6 +45,7 @@
 		word-wrap: break-word;
 		padding: 0 25vw;
 		justify-content: center;
+		flex-direction: column;
 	}
 	.text {
 		font-size: 12px;
@@ -52,15 +53,9 @@
 	}
 }
 
-@media (min-width: 1440px) {
-	.text {
-		font-size: 26px;
-	}
-}
-
 @media (min-width: 2100px) {
 	.text {
-		font-size: 36px;
+		font-size: 28px;
 	}
 	.circle {
 		width: 34px;
