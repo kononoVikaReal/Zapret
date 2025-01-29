@@ -11,6 +11,14 @@ const JetBrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Запрет — инновационный метод обхода блокировок',
+		description:
+			'Запрет — это инновационный метод обхода блокировок, который работает без изменения IP-адреса пользователя',
+		creator: '@bypassblock',
+		images: ['https://zapret.vercel.app/Zapret bigLogo.png'],
+	},
 	title: 'Zapret',
 	description:
 		'Запрет — это инновационный метод обхода блокировок, который работает без изменения IP-адреса пользователя. В отличие от VPN, данный способ сохраняет вашу исходную геолокацию, что делает его незаметным для систем контроля и фильтрации трафика',
@@ -31,12 +39,6 @@ export const metadata: Metadata = {
 		],
 		locale: 'ru_RU',
 		type: 'website',
-	},
-	twitter: {
-		card: 'Zapret - инновационный метод обхода блокировок',
-		title: 'Zapret - обход блокировок',
-		description: 'Инновационный метод обхода блокировок - ПО Zapret',
-		images: ['https://zapret.vercel.app/Zapret bigLogo.png'],
 	},
 }
 
