@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 	description:
 		'Запрет — это инновационный метод обхода блокировок, который работает без изменения IP-адреса пользователя. В отличие от VPN, данный способ сохраняет вашу исходную геолокацию, что делает его незаметным для систем контроля и фильтрации трафика',
 	keywords:
-		'Zapret, Запрет, zapret, запрет, скачать запрет, скачать Zapret, программа Zapret, программа Запрет, скачать VPN, бесплатный VPN, YouTube не работает, VPN для YouTube, VPN для Discord, YouTube VPN, Discord VPN, GoodBye DPI, бесплатные VPN, VPN не работает',
+		'zapret, discord zapret, zapret youtube, zapret discord youtube, zapret github, zapret github discord? Zapret, Запрет, zapret, запрет, скачать запрет, скачать Zapret, zapret скачать, программа Zapret, программа Запрет, скачать VPN, бесплатный VPN, YouTube не работает, VPN для YouTube, VPN для Discord, YouTube VPN, Discord VPN, GoodBye DPI, бесплатные VPN, VPN не работает, vpn, скачать vpn, goodbyedpi, goodbydpi',
 }
 
 export default function RootLayout({

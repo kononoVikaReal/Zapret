@@ -10,6 +10,7 @@ export default function InfoCard({ props }: { props: InfoCardProps }) {
 					src={props.imgUrl}
 					alt={props.imgAlt}
 					layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+					loading='eager'
 					width={120} // Фиксированная ширина
 					height={140} // Фиксированная высота
 				/>

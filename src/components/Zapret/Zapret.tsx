@@ -28,6 +28,7 @@ export default function Zapret() {
 					src='/Zapret bigLogo.png'
 					alt='Zapret logo'
 					layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+					loading='eager'
 					width={390} // Фиксированная ширина
 					height={390} // Фиксированная высота
 				/>
