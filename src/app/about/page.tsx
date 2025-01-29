@@ -5,7 +5,7 @@ import Explanation from '@/components/Explanation/Explanation'
 import InfoCard from '@/components/InfoCard/InfoCard'
 import ListItem from '@/components/ListItem/ListItem'
 import UnderlinedDiv from '@/components/UnderlinedDiv/UnderlinedDiv'
-// import { motion, useScroll } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -47,10 +47,10 @@ const items = [
 
 export default function page() {
 	// eslint-disable-next-line react-hooks/rules-of-hooks
-	// const { scrollYProgress } = useScroll()
+	const { scrollYProgress } = useScroll()
 	return (
 		<div>
-			{/* <motion.div
+			<motion.div
 				id='scroll-indicator'
 				style={{
 					scaleX: scrollYProgress, // Прокрутка зависит от scrollYProgress
@@ -74,7 +74,7 @@ export default function page() {
 					repeat: Infinity, // Зацикливание анимации
 					repeatDelay: 0.5, // Задержка между зацикливаними анимациями
 				}}
-			/> */}
+			/>
 			<InfoCard
 				props={{
 					title: 'YouTube и Discord',
