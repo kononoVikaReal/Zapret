@@ -1,8 +1,12 @@
 import Footer from '@/components/Footer/Footer'
 import Navigation from '@/components/Navigation/Navigation'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+
+// Заглушка
+console.log(Analytics)
 
 const JetBrainsMono = JetBrains_Mono({
 	variable: '--font-jetbrains-mono',
