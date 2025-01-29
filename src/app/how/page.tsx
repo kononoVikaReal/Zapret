@@ -262,7 +262,7 @@ export default function page() {
 					originX: 0, // Начало индикатора с левой стороны
 					background: 'linear-gradient(90deg, #ff0088, #00aaff, #ff0088)', // Переливающийся градиент
 					backgroundSize: '200% 100%', // Увеличиваем размер для анимации
-					borderRadius: '4px', // Округленные углы
+					borderRadius: '2px', // Округленные углы
 					boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)', // Легкая тень
 				}}
 				animate={{
