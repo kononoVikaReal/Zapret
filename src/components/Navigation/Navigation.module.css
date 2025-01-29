@@ -83,6 +83,17 @@
 	.image {
 		display: none;
 	}
+	.nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	.titles {
+		backdrop-filter: blur(10px);
+		border-radius: 25px;
+	}
 }
 
 @media (max-width: 397px) {
