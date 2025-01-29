@@ -264,6 +264,7 @@ export default function page() {
 					backgroundSize: '200% 100%', // Увеличиваем размер для анимации
 					borderRadius: '2px', // Округленные углы
 					boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)', // Легкая тень
+					zIndex: 2,
 				}}
 				animate={{
 					backgroundPosition: ['200% 0', '0 0', '200% 0'], // Позиция фона для переливающегося градиента
