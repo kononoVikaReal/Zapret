@@ -87,7 +87,6 @@ export default function Home() {
 			>
 				<Zapret />
 			</motion.div>
-
 			<motion.span
 				variants={textAnimation}
 				className={styles.title}
