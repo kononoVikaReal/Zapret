@@ -5,9 +5,6 @@ import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-// Заглушка
-console.log(Analytics)
-
 const JetBrainsMono = JetBrains_Mono({
 	variable: '--font-jetbrains-mono',
 	subsets: ['latin', 'cyrillic'],
@@ -56,6 +53,7 @@ export default function RootLayout({
 			<body className={`${JetBrainsMono.className} antialiased`}>
 				<Navigation />
 				{children}
+				<Analytics />
 				<Footer />
 			</body>
 		</html>
