@@ -1,0 +1,86 @@
+.background {
+	background-color: #1ebfbf;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	padding: 5px;
+	align-items: center;
+	border-radius: 16px;
+	justify-content: space-between;
+	justify-items: center;
+	font-size: 30px;
+	text-align: center;
+	max-width: 400px;
+	max-height: 200px;
+}
+
+.download {
+	background-color: #252629;
+	border-radius: 12px;
+	padding: 5px 28px;
+}
+
+@media (min-width: 2200px) {
+	.instruction {
+		font-size: 32px;
+	}
+	.image {
+		width: 48px;
+		height: 48px;
+	}
+	.download {
+		font-size: 40px;
+		padding: 5px 93px;
+	}
+	.background {
+		max-width: 550px;
+	}
+}
+
+@media (min-width: 1953px) {
+	.background {
+		font-size: 25px;
+	}
+	.download {
+		padding: 5px 53px;
+	}
+}
+
+@media (max-width: 1190px) {
+	.background {
+		margin-top: 15px;
+	}
+	.instruction {
+		font-weight: 600;
+	}
+}
+
+@media (max-width: 767px) {
+	.background {
+		padding: 7px;
+		font-size: 10px;
+		width: 250px;
+		font-size: 17px;
+	}
+	.download {
+		padding: 5px 23px;
+	}
+	.instruction {
+		font-weight: 500;
+	}
+	.image {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+@media (max-width: 397px) {
+	.background {
+		width: 220px;
+	}
+	.download {
+		font-size: 13px;
+		text-align: center;
+		padding: 5px 32px;
+	}
+}

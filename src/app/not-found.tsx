@@ -1,11 +1,24 @@
-import Link from 'next/link'
-
+import NotFoundCase from '@/components/NotFound/NotFound'
+import Image from 'next/image'
+import styles from './page.module.css'
 export default function NotFound() {
 	return (
-		<div>
-			<h2>Not Found</h2>
-			<p>Could not find requested resource</p>
-			<Link href='/'>Return Home</Link>
+		<div className={styles.container}>
+			<NotFoundCase />
+
+			<div className={styles.notFoundImageDiv}>
+				<Image
+					className={styles.image}
+					src={'/sad-baby-gif.gif'}
+					alt={''}
+					width={1000}
+					height={1000}
+				/>
+			</div>
+
+			<footer className={styles.footer}>
+				{/* Ваш контент footer здесь */}
+			</footer>
 		</div>
 	)
 }
