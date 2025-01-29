@@ -12,7 +12,8 @@ const JetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
 	title: 'Zapret',
-	description: 'Zapret - обходы блокировок',
+	description:
+		'Запрет — это инновационный метод обхода блокировок, который работает без изменения IP-адреса пользователя. В отличие от VPN, данный способ сохраняет вашу исходную геолокацию, что делает его незаметным для систем контроля и фильтрации трафика',
 }
 
 export default function RootLayout({

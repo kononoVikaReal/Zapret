@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable react/no-unescaped-entities */
 'use client'
 import Explanation from '@/components/Explanation/Explanation'
 import InfoCard from '@/components/InfoCard/InfoCard'
