@@ -11,7 +11,7 @@
 	justify-items: center;
 	opacity: 0;
 	transform: scale(0.95);
-	animation: slideIn 1s ease-out forwards;
+	animation: slideIn 0.5s ease-out forwards;
 }
 
 .h1,
@@ -19,7 +19,7 @@
 .additional {
 	opacity: 0;
 	transform: translateY(20px);
-	animation: fadeInText 1s ease-out forwards;
+	animation: fadeInText 0.5s ease-out forwards;
 }
 
 .h1 {
