@@ -113,12 +113,15 @@ export default function page() {
 					))}
 				</div>
 				<UnderlinedDiv>
-					<Image
-						src={'/DPIInfo.png'}
-						alt='About DPI'
-						width={528}
-						height={226}
-					/>
+					<div className={styles.imageContainer}>
+						<Image
+							src={'/DPIInfo.png'}
+							alt='About DPI'
+							layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+							width={528}
+							height={226} // Фиксированная высота
+						/>
+					</div>
 					<p className={styles.p}>
 						Очень условно (мы не знаем алгоритмов наверняка) это работает так -
 						сервер получает данные с пакетом от вашего роутера и видит
@@ -163,7 +166,15 @@ export default function page() {
 						}}
 					/>
 				</div>
-				<Image src={'/tcp.png'} alt={'TCP example'} width={708} height={117} />
+				<div className={styles.imageContainer}>
+					<Image
+						src={'/tcp.png'}
+						alt={'TCP example'}
+						layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+						width={708}
+						height={117}
+					/>
+				</div>
 				<span className={styles.underlined}>
 					Добавление "мусорных" данных (Fake packets)
 				</span>
@@ -185,12 +196,15 @@ export default function page() {
 						<ListItem key={index} props={item} />
 					))}
 				</div>
-				<Image
-					src={'/fake.png'}
-					alt={'example of fake'}
-					width={711}
-					height={246}
-				/>
+				<div className={styles.imageContainer}>
+					<Image
+						src={'/fake.png'}
+						alt={'example of fake'}
+						layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+						width={711}
+						height={246}
+					/>
+				</div>
 				<span className={styles.underlined}>
 					Изменение порядка следования сегментов (TCP disorder)
 				</span>
@@ -237,12 +251,15 @@ export default function page() {
 					В режиме multidisorder nfqws отправляет сегменты в обратном порядке,
 					например: 4, 3, 2, 1.
 				</p>
-				<Image
-					src={'/multidisorder.png'}
-					alt={'example of multidisorder'}
-					width={816}
-					height={129}
-				/>
+				<div className={styles.imageContainer}>
+					<Image
+						src={'/multidisorder.png'}
+						alt={'example of multidisorder'}
+						layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+						width={816}
+						height={129}
+					/>
+				</div>
 				<p className={styles.p}>
 					В режиме fakedsplit, он отправляет запрос в порядке: фейк 2-й части, 2
 					часть, фейк 2-й части, фейк 1-й части, 1 часть, фейк 1-й части.

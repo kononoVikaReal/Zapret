@@ -25,6 +25,13 @@
 	border-radius: 19px; /* Скругленные углы */
 }
 
+.titles a:not(a.active):hover {
+	transition: all 0s;
+	width: max-content;
+	border-radius: 16px;
+	background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+}
+
 .image {
 	position: relative;
 	overflow: hidden;
@@ -44,16 +51,17 @@
 
 @media (max-width: 767px) {
 	.titles {
-		font-size: 10px;
+		font-size: 14px;
 		gap: 7px;
 		padding-top: 7px;
 	}
 	.image {
-		width: 70px;
-		height: 30px;
+		width: 140px;
+		height: 50px;
 	}
 	.nav {
 		gap: 6px;
+		margin: 0 40px;
 	}
 }
 
@@ -67,11 +75,18 @@
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.titles {
-		font-size: 10px;
+		font-size: 13px;
+		text-align: center;
 	}
 	.image {
 		display: none;
+	}
+}
+
+@media (max-width: 397px) {
+	.nav {
+		margin: 0 20px;
 	}
 }

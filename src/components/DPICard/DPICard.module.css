@@ -49,3 +49,74 @@
 	background: #b6bff5;
 	padding: 10px;
 }
+
+@media (min-width: 260px) {
+	.background {
+		max-width: 75vw;
+	}
+	.number {
+		width: 40px;
+		height: 40px;
+		font-size: 24px;
+	}
+	.firstLine {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 425px) {
+	.firstLine {
+		font-size: 22px;
+	}
+	.background {
+		max-width: 60vw;
+	}
+}
+
+@media (min-width: 1440px) {
+	.background {
+		width: 400px;
+	}
+	.firstLine {
+		font-size: 26px;
+	}
+	.number {
+		font-size: 30px;
+		width: 60px;
+		height: 60px;
+	}
+	.secondLine {
+		font-size: 24px;
+	}
+	.thirdLine {
+		font-size: 22px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.background {
+		max-width: 100vw;
+		width: 600px;
+		justify-items: center;
+	}
+	.firstLine {
+		font-size: 32px;
+	}
+	.secondLine {
+		font-size: 26px;
+	}
+	.thirdLine {
+		font-size: 24px;
+	}
+	.number {
+		font-size: 45px;
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.firstLine {
+		justify-content: center;
+	}
+}

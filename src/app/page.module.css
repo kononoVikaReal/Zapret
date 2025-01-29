@@ -16,5 +16,6 @@
 	.advantagesGrid {
 		display: grid;
 		justify-content: center;
+		animation: none;
 	}
 }

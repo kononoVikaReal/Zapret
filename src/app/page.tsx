@@ -55,6 +55,22 @@ const textAnimation = {
 	},
 }
 
+let advantagesAnimation = {
+	hidden: {
+		x: -100,
+		opacity: 0,
+	},
+	visible: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			type: 'spring',
+			stiffness: 100,
+			damping: 25,
+		},
+	},
+}
+
 export default function Home() {
 	return (
 		<motion.div
@@ -80,9 +96,8 @@ export default function Home() {
 				Для чего нужен Zapret?
 			</motion.span>
 			<motion.div
-				variants={textAnimation}
+				variants={advantagesAnimation}
 				whileHover={{ scale: 1.05 }}
-				whileTap={{ scale: 0.95 }}
 				className={styles.advantagesGrid}
 			>
 				<Advantage advantages={advantages} />

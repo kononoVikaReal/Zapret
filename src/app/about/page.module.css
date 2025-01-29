@@ -65,6 +65,10 @@
 	width: max-content;
 }
 
+.imageContainer {
+	width: 80%; /* Задайте ширину контейнера */
+}
+
 /* @media (min-width: 2100px) {
 	.h1 {
 		font-size: 62px;
@@ -114,6 +118,12 @@
 	}
 } */
 
+@media (max-width: 1400px) {
+	.example {
+		text-align: center;
+	}
+}
+
 /* Адаптивные стили */
 @media (max-width: 1200px) {
 	.h1 {
@@ -141,10 +151,12 @@
 		max-width: 100%;
 		padding: 0 40px;
 		box-sizing: border-box;
-		text-align: center;
+		text-align: justify;
 	}
 	.container {
 		grid-template-columns: 1fr;
+		width: 60vw;
+		justify-content: center;
 		padding: 16px;
 		gap: 16px;
 	}
@@ -172,6 +184,7 @@
 		font-size: 12px;
 		text-align: justify;
 		padding: 0 70px;
+		width: 90vw;
 	}
 	.underlined {
 		font-size: 12px;
@@ -181,6 +194,7 @@
 		gap: 10px;
 	}
 	.example {
+		width: 80vw;
 		font-size: 0.8rem;
 		padding: 6px;
 	}
@@ -193,14 +207,80 @@
 @media (max-width: 480px) {
 	.p {
 		font-size: 10px;
-		max-width: 360px;
+		word-wrap: break-word;
 		padding: 0 20px;
 	}
 	.header {
-		font-size: 14px;
+		font-size: 12px;
+		width: 100vw;
+		word-wrap: break-word;
+		padding: 0 20vw;
+		text-align: center;
 	}
 	.underlined {
 		text-align: center;
-		font-size: 8px;
+		font-size: 10px;
+		width: 100vw;
+		word-wrap: break-word;
+		padding: 0 20px;
+	}
+	.example {
+		word-wrap: break-word;
+	}
+	.h1 {
+		font-size: 18px;
+		text-align: center;
+		width: 90vw;
+	}
+	.bold {
+		width: 80vw;
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.imageContainer {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.p {
+		font-size: 20px;
+	}
+	.bold {
+		font-size: 28px;
+	}
+	.example {
+		font-size: 24px;
+		text-align: center;
+	}
+	.underlined {
+		font-size: 24px;
+	}
+	.header {
+		font-size: 24px;
+	}
+	.imageContainer {
+		width: 40%;
+	}
+	.container {
+		width: 60vw;
+	}
+}
+
+@media (min-width: 2100px) {
+	.p {
+		font-size: 24px;
+		padding: 0 20px;
+	}
+	.underlined {
+		font-size: 28px;
+	}
+	.header {
+		font-size: 32px;
+	}
+	.bold {
+		font-size: 30px;
 	}
 }

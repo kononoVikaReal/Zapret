@@ -118,23 +118,32 @@
 		margin: 20px 330px;
 	}
 	.imageContainer {
-		width: 40%; /* Задайте ширину контейнера */
+		width: 70%; /* Задайте ширину контейнера */
 	}
 }
 
-@media (min-width: 1953px) {
+@media (min-width: 1900px) {
 	.card {
 		margin-top: 50px;
+		width: 900px;
 	}
 	.h1 {
-		font-size: 33px;
+		font-size: 32px;
 	}
 	.h2 {
-		font-size: 24px;
+		font-size: 22px;
+		text-align: justify;
+	}
+	.additional {
+		font-size: 22px;
 	}
 }
 
 @media (min-width: 2300px) {
+	.card {
+		width: 1300px;
+		margin-left: 700px;
+	}
 	.h1 {
 		font-size: 45px;
 	}
@@ -142,7 +151,10 @@
 		font-size: 30px;
 	}
 	.imageContainer {
-		width: 60%; /* Задайте ширину контейнера */
+		width: 60%;
+	}
+	.additional {
+		font-size: 26px;
 	}
 }
 
@@ -150,24 +162,28 @@
 	.card {
 		margin: 20px 170px;
 	}
+	.imageContainer {
+		width: 60%;
+	}
 }
 
 @media (max-width: 800px) {
 	.card {
-		margin: 20px 30px;
+		grid-template-columns: 1fr;
+		text-align: center;
 	}
 	.h1 {
 		font-size: 24px;
 	}
 	.h2 {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.imageContainer {
-		width: 100%; /* Задайте ширину контейнера */
+		width: 30%;
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 600px) {
 	.card {
 		margin: 20px 5px;
 	}
@@ -175,6 +191,6 @@
 		font-size: 20px;
 	}
 	.h2 {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }

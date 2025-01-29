@@ -8,12 +8,9 @@ export default function InfoDownload() {
 				<Link href='#download'>Скачать Zapret</Link>
 			</div>
 			<div className={styles.instruction}>
-				<Image
-					src='/instruction.svg'
-					alt='instruction logo'
-					width={39}
-					height={39}
-				/>
+				<div className={styles.image}>
+					<Image src='/instruction.svg' alt='instruction logo' fill />
+				</div>
 				<a target='_blank' href='https://teletype.in/@censorliber/zapret'>
 					Подробная инструкция
 				</a>
