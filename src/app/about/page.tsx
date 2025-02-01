@@ -49,7 +49,7 @@ export default function page() {
 	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const { scrollYProgress } = useScroll()
 	return (
-		<div>
+		<div className='overflow-hidden'>
 			<motion.div
 				id='scroll-indicator'
 				style={{

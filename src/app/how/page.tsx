@@ -249,7 +249,7 @@ const itemsThen = [
 export default function page() {
 	const { scrollYProgress } = useScroll()
 	return (
-		<div>
+		<div className='overflow-hidden'>
 			<motion.div
 				id='scroll-indicator'
 				style={{
