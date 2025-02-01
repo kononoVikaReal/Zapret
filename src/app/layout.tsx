@@ -57,7 +57,9 @@ export default function RootLayout({
 			<head>
 				<meta name='apple-mobile-web-app-title' content='Zapret' />
 			</head>
-			<body className={`${JetBrainsMono.className} antialiased`}>
+			<body
+				className={`${JetBrainsMono.className} antialiased overflow-hidden`}
+			>
 				<Navigation />
 				{children}
 				<Analytics />
