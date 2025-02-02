@@ -120,6 +120,7 @@ export default function page() {
 							layout='responsive' // Используйте layout="responsive" для адаптивного изображения
 							width={528}
 							height={226} // Фиксированная высота
+							className='rounded-sm'
 						/>
 					</div>
 					<p className={styles.p}>
@@ -173,6 +174,7 @@ export default function page() {
 						layout='responsive' // Используйте layout="responsive" для адаптивного изображения
 						width={708}
 						height={117}
+						className='rounded-sm'
 					/>
 				</div>
 				<span className={styles.underlined}>
@@ -203,6 +205,7 @@ export default function page() {
 						layout='responsive' // Используйте layout="responsive" для адаптивного изображения
 						width={711}
 						height={246}
+						className='rounded-sm'
 					/>
 				</div>
 				<span className={styles.underlined}>
@@ -258,6 +261,7 @@ export default function page() {
 						layout='responsive' // Используйте layout="responsive" для адаптивного изображения
 						width={816}
 						height={129}
+						className='rounded-sm'
 					/>
 				</div>
 				<p className={styles.p}>
@@ -281,9 +285,12 @@ export default function page() {
 					или точку в конце имени хоста. Это как изменить надпись на посылке,
 					чтобы ее не узнали.
 				</p>
-				<p className={styles.p}>
+				{/* <p className={styles.p}>
 					Например, Host: blocked.com превращается в host: blocked.com.
-				</p>
+				</p> */}
+				<span className={styles.example}>
+					Например, Host: blocked.com превращается в host: blocked.com.
+				</span>
 				<span className={styles.underlined}>
 					Разделение TLS ClientHello на два TLS records (tlsrec)
 				</span>
@@ -365,11 +372,16 @@ export default function page() {
 					IP-адресу, то Zapret не поможет. Он заточен на обман DPI, который
 					анализирует именно доменные имена.
 				</p>
-				<p className={styles.p}>
+				{/* <p className={styles.p}>
 					Пример: Если сайт youtube.com имеет IP-адрес 1.2.3.4, и провайдер
 					заблокировал доступ ко всем сайтам на этом IP, то Zapret не сможет
 					помочь, потому что он не изменяет IP-адрес назначения.
-				</p>
+				</p> */}
+				<span className={styles.example}>
+					Пример: Если сайт youtube.com имеет IP-адрес 1.2.3.4, и провайдер
+					заблокировал доступ ко всем сайтам на этом IP, то Zapret не сможет
+					помочь, потому что он не изменяет IP-адрес назначения.
+				</span>
 				<ListItem
 					props={{
 						markedWord: undefined,
@@ -380,15 +392,23 @@ export default function page() {
 					Если провайдер подменяет DNS-запросы, то возможно даже не дойти до
 					стадии, когда сработает Zapret.
 				</p>
-				<p className={styles.p}>
+				{/* <p className={styles.p}>
 					Пример: Ты вводишь youtube.com в браузере, но провайдер подменяет
 					DNS-ответ и вместо реального IP-адреса сайта выдает тебе IP-адрес
 					своей заглушки или вообще неверный адрес. В этом случае твой запрос
 					даже не дойдет до настоящего сайта, и Zapret не сможет вмешаться.
-				</p>
+				</p> */}
+				<span className={styles.example}>
+					Пример: Ты вводишь youtube.com в браузере, но провайдер подменяет
+					DNS-ответ и вместо реального IP-адреса сайта выдает тебе IP-адрес
+					своей заглушки или вообще неверный адрес. В этом случае твой запрос
+					даже не дойдет до настоящего сайта, и Zapret не сможет вмешаться.
+				</span>
 				<p className={styles.p}>
-					Решение: Использовать DNS over HTTPS (DoH) или DNS over TLS (DoT),
-					чтобы защитить свои DNS-запросы от подмены. Также можно попробовать
+					<span className={styles.underlinedWord}>
+						Решение: Использовать DNS over HTTPS (DoH) или DNS over TLS (DoT)
+					</span>
+					, чтобы защитить свои DNS-запросы от подмены. Также можно попробовать
 					использовать DNS-сервер, который не контролируется провайдером,
 					например, публичные DNS от Google (8.8.8.8, 8.8.4.4) или Cloudflare
 					(1.1.1.1, 1.0.0.1).
@@ -404,11 +424,16 @@ export default function page() {
 					которая умеет анализировать не только заголовки, но и содержимое
 					трафика, то Zapret может не справиться.
 				</p>
-				<p className={styles.p}>
+				{/* <p className={styles.p}>
 					Пример: Провайдер использует DPI, который умеет собирать
 					TCP-соединение целиком и анализировать его, несмотря на разбиение на
 					сегменты или добавление "мусорных" данных.
-				</p>
+				</p> */}
+				<span className={styles.example}>
+					Пример: Провайдер использует DPI, который умеет собирать
+					TCP-соединение целиком и анализировать его, несмотря на разбиение на
+					сегменты или добавление "мусорных" данных.
+				</span>
 				<p className={styles.p}>
 					Такие системы встречаются нечасто, но они существуют и постоянно
 					совершенствуются.
@@ -449,8 +474,11 @@ export default function page() {
 					соединение может быть сброшено.
 				</p>
 				<p className={styles.p}>
-					Решение: Использовать сайты, поддерживающие TLS 1.3. В этой версии
-					протокола сертификат сервера передается в зашифрованном виде.
+					<span className={styles.underlinedWord}>
+						Решение: Использовать сайты, поддерживающие TLS 1.3
+					</span>
+					. В этой версии протокола сертификат сервера передается в
+					зашифрованном виде.
 				</p>
 			</Explanation>
 		</div>

@@ -35,7 +35,7 @@
 		height: 26px;
 	}
 	.text {
-		font-size: 18px;
+		font-size: 26px;
 	}
 }
 
@@ -48,14 +48,14 @@
 		flex-direction: column;
 	}
 	.text {
-		font-size: 12px;
+		font-size: 16px;
 		text-align: center;
 	}
 }
 
 @media (min-width: 2100px) {
 	.text {
-		font-size: 28px;
+		font-size: 32px;
 	}
 	.circle {
 		width: 34px;

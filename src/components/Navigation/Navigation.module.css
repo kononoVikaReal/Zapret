@@ -79,13 +79,16 @@
 	}
 }
 
-@media (max-width: 450px) {
-	.titles {
-		font-size: 13px;
-		text-align: center;
-	}
+@media (max-width: 825px) {
 	.image {
 		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.titles {
+		font-size: 12px;
+		text-align: center;
 	}
 	.nav {
 		position: fixed;

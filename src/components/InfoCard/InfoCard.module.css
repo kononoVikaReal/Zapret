@@ -136,6 +136,9 @@
 }
 
 @media (min-width: 2300px) {
+	.card {
+		margin: 20px 700px;
+	}
 	.h1 {
 		font-size: 45px;
 	}

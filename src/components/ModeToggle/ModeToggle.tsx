@@ -13,8 +13,8 @@ import {
 import { useEffect, useState } from 'react'
 
 export function ModeToggle() {
-	const [mounted, setMounted] = useState(false)
 	const { theme, setTheme } = useTheme()
+	const [mounted, setMounted] = useState(false)
 	// When mounted on client, now we can show the UI
 	useEffect(() => setMounted(true), [])
 	if (!mounted) return null

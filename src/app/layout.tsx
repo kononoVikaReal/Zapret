@@ -71,12 +71,7 @@ export default function RootLayout({
 				<meta name='apple-mobile-web-app-title' content='Zapret' />
 			</head>
 			<body className={`antialiased overflow-hidden font-jetbrains`}>
-				<ThemeProvider
-					attribute='class'
-					defaultTheme='system'
-					enableSystem
-					disableTransitionOnChange
-				>
+				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
 					<Navigation />
 					{children}
 					<Footer />

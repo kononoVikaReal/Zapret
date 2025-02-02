@@ -96,7 +96,7 @@
 		word-wrap: break-word;
 		overflow-wrap: break-word;
 		max-width: 100%;
-		padding: 0 40px;
+		/* padding: 0 40px; */
 		box-sizing: border-box;
 		text-align: justify;
 	}
@@ -153,12 +153,12 @@
 
 @media (max-width: 480px) {
 	.p {
-		font-size: 10px;
+		font-size: 14px;
 		word-wrap: break-word;
 		padding: 0 20px;
 	}
 	.header {
-		font-size: 12px;
+		font-size: 18px;
 		width: 100vw;
 		word-wrap: break-word;
 		padding: 0 20vw;
@@ -166,7 +166,7 @@
 	}
 	.underlined {
 		text-align: center;
-		font-size: 10px;
+		font-size: 16px;
 		width: 100vw;
 		word-wrap: break-word;
 		padding: 0 20px;

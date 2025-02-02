@@ -35,7 +35,7 @@
 		text-align: center;
 	}
 	.p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.container {
 		grid-template-columns: repeat(1, 1fr);
@@ -45,12 +45,12 @@
 
 @media (max-width: 900px) {
 	.p {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.4;
 		word-wrap: break-word;
 		overflow-wrap: break-word;
 		max-width: 100%;
-		padding: 0 40px;
+		/* padding: 0 40px; */
 		box-sizing: border-box;
 		text-align: justify;
 	}
@@ -73,6 +73,9 @@
 	.example {
 		font-size: 0.9rem;
 		padding: 8px;
+	}
+	.header {
+		font-size: 18px;
 	}
 }
 
@@ -103,12 +106,12 @@
 
 @media (max-width: 480px) {
 	.p {
-		font-size: 10px;
+		font-size: 14px;
 		word-wrap: break-word;
 		padding: 0 20px;
 	}
 	.header {
-		font-size: 12px;
+		font-size: 18px;
 		width: 100vw;
 		word-wrap: break-word;
 		padding: 0 20vw;
@@ -116,7 +119,7 @@
 	}
 	.underlined {
 		text-align: center;
-		font-size: 10px;
+		font-size: 16px;
 		width: 100vw;
 		word-wrap: break-word;
 		padding: 0 20px;

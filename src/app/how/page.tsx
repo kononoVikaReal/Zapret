@@ -324,9 +324,11 @@ export default function page() {
 				</div>
 				<span className={styles.header}>Основные протоколы VPN</span>
 				<p className={styles.p}>
-					VPN-протоколы — это набор правил, определяющих, как VPN-клиент и
-					VPN-сервер устанавливают и поддерживают зашифрованное соединение. От
-					выбора протокола зависят скорость, безопасность и стабильность
+					<span className={styles.underlinedWord}>
+						VPN-протоколы — это набор правил, определяющих, как VPN-клиент и
+						VPN-сервер устанавливают и поддерживают зашифрованное соединение
+					</span>
+					. От выбора протокола зависят скорость, безопасность и стабильность
 					VPN-подключения. Вот основные VPN-протоколы, используемые сегодня
 				</p>
 				<div className={styles.container}>
@@ -363,9 +365,7 @@ export default function page() {
 					страну и вписать её в файл torrc, что позволяет быстро использовать
 					ресурсы Tor.
 				</p>
-				<span className={styles.header}>
-					<span className={styles.underlinedWord}>Мосты (bridges)</span> в Tor
-				</span>
+				<span className={styles.header}>Мосты (bridges) в Tor</span>
 				<p className={styles.p}>
 					Представьте, что власти знают о существовании обычных входов в сеть
 					Tor (известные узлы) и блокируют их. Мосты - это секретные,
@@ -377,9 +377,7 @@ export default function page() {
 					))}
 				</div>
 				<span className={styles.header}>
-					<span className={styles.underlinedWord}>
-						Почему мосты труднее заблокировать, чем один IP-адрес VPN:
-					</span>
+					Почему мосты труднее заблокировать, чем один IP-адрес VPN:
 				</span>
 				<div className={styles.container}>
 					{itemsWhyHarder.map((item, index) => (
@@ -439,8 +437,11 @@ export default function page() {
 					))}
 				</div>
 				<p className={styles.p}>
-					Простыми словами, GoodbyeDPI и Zapret - это способы обхитрить систему,
-					которая пытается заблокировать вам доступ к сайтам, заставляя её
+					Простыми словами,{' '}
+					<span className={styles.underlinedWord}>
+						GoodbyeDPI и Zapret - это способы обхитрить систему
+					</span>
+					, которая пытается заблокировать вам доступ к сайтам, заставляя её
 					думать, что вы никуда "запрещённый" не едете.
 				</p>
 				<span className={styles.header}>Важно помнить</span>
@@ -478,13 +479,19 @@ export default function page() {
 					))}
 				</div>
 				<p className={styles.p}>
-					Подводя итог: Zapret и GoodbyeDPI предназначены для обхода блокировок
-					доступа к внешнему интернету. В случае полной изоляции от внешнего
-					мира, они станут бесполезны, так как проблема будет не в DPI, а в
-					отсутствии самого доступа.
+					<span className={styles.underlinedWord}>
+						Подводя итог: Zapret и GoodbyeDPI предназначены для обхода
+						блокировок доступа к внешнему интернету
+					</span>
+					. В случае полной изоляции от внешнего мира, они станут бесполезны,
+					так как проблема будет не в DPI, а в отсутствии самого доступа.
 				</p>
 				<p className={styles.p}>
-					Важно отметить: Полная изоляция Рунета - это пока что теоретический
+					<span className={styles.underlinedWord}>
+						Важно отметить: Полная изоляция Рунета - это пока что теоретический
+						сценарий
+					</span>
+					. Важно отметить: Полная изоляция Рунета - это пока что теоретический
 					сценарий, реализация которого крайне сложна и повлечет за собой
 					множество негативных последствий.
 				</p>
