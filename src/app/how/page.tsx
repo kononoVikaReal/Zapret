@@ -249,7 +249,7 @@ const itemsThen = [
 export default function page() {
 	const { scrollYProgress } = useScroll()
 	return (
-		<div className='overflow-hidden'>
+		<div className='overflow-hidden dark:text-th-primary-dark'>
 			<motion.div
 				id='scroll-indicator'
 				style={{
@@ -289,7 +289,7 @@ export default function page() {
 
 			<Explanation>
 				<h1 className={styles.h1}>VPN</h1>
-				<p className={styles.p}>
+				<p className={`${styles.p}`}>
 					Представьте, что интернет - это большая сеть дорог, а ваш компьютер -
 					это машина, которая по ним ездит. Когда вы заходите на сайт, ваша
 					машина отправляет запрос по этим дорогам. Но иногда на дорогах стоят

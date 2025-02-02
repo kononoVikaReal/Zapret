@@ -4,7 +4,6 @@ import InfoCard from '@/components/InfoCard/InfoCard'
 import Zapret from '@/components/Zapret/Zapret'
 import * as motion from 'framer-motion/client'
 import styles from './page.module.css'
-
 const advantages = [
 	{
 		imageUrl: '/PC.svg',
@@ -77,6 +76,7 @@ export default function Home() {
 			initial='hidden'
 			whileInView='visible'
 			viewport={{ once: true, amount: 0.2 }}
+			className=''
 		>
 			<motion.div
 				variants={textAnimation}

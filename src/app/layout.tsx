@@ -1,14 +1,23 @@
 import Footer from '@/components/Footer/Footer'
 import Navigation from '@/components/Navigation/Navigation'
+import { ThemeProvider } from '@/components/ThemeProvider/ThemeProvider'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
-import { JetBrains_Mono } from 'next/font/google'
+import { Jersey_10, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+
+const Jersey10 = Jersey_10({
+	variable: '--font-jersey10',
+	subsets: ['latin'],
+	display: 'swap',
+	weight: '400',
+})
 
 const JetBrainsMono = JetBrains_Mono({
 	variable: '--font-jetbrains-mono',
 	subsets: ['latin', 'cyrillic'],
+	display: 'swap',
 	weight: '400',
 })
 
@@ -53,18 +62,28 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='ru'>
+		<html
+			lang='ru'
+			className={`${Jersey10.variable} ${JetBrainsMono.variable}`}
+			suppressHydrationWarning
+		>
 			<head>
 				<meta name='apple-mobile-web-app-title' content='Zapret' />
 			</head>
-			<body
-				className={`${JetBrainsMono.className} antialiased overflow-hidden`}
-			>
-				<Navigation />
-				{children}
+			<body className={`antialiased overflow-hidden font-jetbrains`}>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+					disableTransitionOnChange
+				>
+					<Navigation />
+					{children}
+					<Footer />
+				</ThemeProvider>
+
 				<Analytics />
 				<SpeedInsights />
-				<Footer />
 			</body>
 		</html>
 	)

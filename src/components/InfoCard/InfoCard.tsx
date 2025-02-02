@@ -4,7 +4,7 @@ import { InfoCardProps } from './InfoCard.props'
 
 export default function InfoCard({ props }: { props: InfoCardProps }) {
 	return (
-		<div className={styles.card}>
+		<div className={`${styles.card} dark:text-th-primary-dark`}>
 			<div className={styles.imageContainer}>
 				<Image
 					src={props.imgUrl}

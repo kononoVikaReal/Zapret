@@ -2,12 +2,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 15px;
+	gap: 30px;
 }
 
 .titles {
 	display: flex;
-	gap: 46px;
+	gap: 34px;
 	align-items: center;
 	justify-content: center;
 	padding-top: 12px;
@@ -22,21 +22,26 @@
 
 .titles a.active {
 	background-color: #a1adf5; /* Цвет заливки */
+	color: #000000;
 	border-radius: 19px; /* Скругленные углы */
 }
 
 .titles a:not(a.active):hover {
 	transition: all 0s;
+	color: #000000;
 	width: max-content;
 	border-radius: 16px;
 	background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
 }
 
 .image {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 	position: relative;
 	overflow: hidden;
-	width: 150px;
-	height: 55px;
+	padding-top: 10px;
+	font-size: 20px;
 }
 
 @media (min-width: 1953px) {
@@ -44,8 +49,7 @@
 		font-size: 28px;
 	}
 	.image {
-		width: 200px;
-		height: 70px;
+		font-size: 32px;
 	}
 }
 
@@ -92,6 +96,8 @@
 	}
 	.titles {
 		backdrop-filter: blur(10px);
+		background: rgba(255, 255, 255, 0.4);
+		color: #000000;
 		-webkit-backdrop-filter: blur(10px);
 		border-radius: 25px;
 	}
