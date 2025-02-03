@@ -1,3 +1,4 @@
+import Announcement from '@/components/Announcement/Announcement'
 import Footer from '@/components/Footer/Footer'
 import Navigation from '@/components/Navigation/Navigation'
 import { ThemeProvider } from '@/components/ThemeProvider/ThemeProvider'
@@ -72,6 +73,7 @@ export default function RootLayout({
 			</head>
 			<body className={`antialiased overflow-hidden font-jetbrains`}>
 				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+					<Announcement />
 					<Navigation />
 					{children}
 					<Footer />

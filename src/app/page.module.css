@@ -74,13 +74,16 @@
 	}
 }
 
-@media (max-width: 767px) {
-	.title {
-		font-size: 20px;
-	}
+@media (max-width: 1373px) {
 	.advantagesGrid {
 		display: grid;
 		justify-content: center;
 		animation: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.title {
+		font-size: 20px;
 	}
 }

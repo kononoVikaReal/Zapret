@@ -1,4 +1,5 @@
 import Advantage from '@/components/Advantage/Advantage'
+import CommentSectionWrapper from '@/components/CommentSectionWrapper/CommentSectionWrapper'
 import DownloadCard from '@/components/DownloadCard/DownloadCard'
 import InfoCard from '@/components/InfoCard/InfoCard'
 import Zapret from '@/components/Zapret/Zapret'
@@ -124,6 +125,7 @@ export default function Home() {
 				whileInView='visible' // Когда элемент попадет в viewport, он станет видимым
 				viewport={{ once: true, amount: 0.2 }} // Анимация срабатывает при 20% видимости элемента
 				id='download'
+				className='mt-10 mb-7'
 			>
 				<DownloadCard props={cards} />
 			</motion.div>
@@ -137,6 +139,28 @@ export default function Home() {
 					additionalInfo: '',
 				}}
 			/>
+			{/* TEMPORARY */}
+			<div className='max-w-3xl mx-auto bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 p-6 rounded-lg shadow-lg'>
+				<h2 className='text-2xl font-semibold text-center mb-4 text-gray-800'>
+					Внимание!
+				</h2>
+				<p className='text-lg text-center text-gray-700 mb-4'>
+					Чтобы иметь возможность оставить комментарий, нужно авторизоваться в
+					ваш аккаунт (при его отсутствии - зарегистрироваться)
+					<br />
+					Все противоречащие закону комментарии будут удалены
+				</p>
+				<p className='text-md text-center italic text-blue-500 underline mb-4'>
+					Ник администратора: TLM Givl Upi (c эмодзи &lt;/&gt;)
+					<br />
+					Все остальные пользователи перед ником имеют эмодзи звездочек
+				</p>
+				<p className='text-sm text-center text-gray-500'>
+					Комментарии являются нововведением с 03.02.2025 и проходят
+					бета-тестирование
+				</p>
+			</div>
+			<CommentSectionWrapper />
 		</motion.div>
 	)
 }

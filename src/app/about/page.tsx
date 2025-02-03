@@ -78,11 +78,11 @@ export default function page() {
 			<InfoCard
 				props={{
 					title: 'YouTube и Discord',
-					desc: 'Ютуб и дискорд не работает через запрет ',
+					desc: 'Ютуб и дискорд не работают через запрет ',
 					imgUrl: '/attention.svg',
 					imgAlt: 'attention logo',
 					additionalInfo:
-						'<span>Обход блокировок дискорда и ютуба <span style="text-decoration: underline; color: #000;">доступен ниже</span></span><br><a target=_blank href=https://t.me/youtubenotwork style="text-decoration: underline; color: #512bd4;">ВПН для YouTube и Discord</a>',
+						'<span>Обход блокировок дискорда и ютуба <a style="text-decoration: underline; color: #000;">доступен ниже ↓</a></span ><br><a target=_blank href=https://t.me/youtubenotwork style="text-decoration: underline; color: #512bd4;">ВПН для YouTube и Discord</a>',
 				}}
 			/>
 			<Explanation>

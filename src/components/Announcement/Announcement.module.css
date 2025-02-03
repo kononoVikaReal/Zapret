@@ -1,0 +1,56 @@
+.announcementWrapper {
+	width: 100%;
+	margin-bottom: 2rem;
+	background: linear-gradient(to right, #fbd3e9, #f4f4f9, #d1c4e9);
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.marqueeText {
+	display: inline-block;
+	white-space: nowrap;
+	animation: marquee 13s linear infinite;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1rem 1.5rem;
+	will-change: transform; /* для улучшения производительности анимации */
+}
+
+.textWrapper {
+	background: linear-gradient(to right, #ff8a00, #da1d77);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+/* Определение анимации бегущей строки */
+@keyframes marquee {
+	0% {
+		transform: translateX(150%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@media (min-width: 1953px) {
+	.marqueeText {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.marqueeText {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.announcementWrapper {
+		margin-top: 4rem;
+	}
+	.marqueeText {
+		font-size: 1rem;
+	}
+}

@@ -1,0 +1,39 @@
+.commentContainer {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 16px;
+}
+
+.commentHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 400px) {
+	.commentHeader {
+		max-width: 360px;
+		font-size: 14px;
+		flex: 1 1 auto;
+	}
+}
+
+.username {
+	font-weight: bold;
+}
+
+.createdAt {
+	font-size: 0.8em;
+	color: #666;
+}
+
+.commentContent {
+	margin-top: 5px;
+}
+
+.replies {
+	margin-top: 10px;
+	display: grid;
+	gap: 10px;
+}
