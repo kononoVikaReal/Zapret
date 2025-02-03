@@ -2,7 +2,6 @@ import Announcement from '@/components/Announcement/Announcement'
 import Footer from '@/components/Footer/Footer'
 import Navigation from '@/components/Navigation/Navigation'
 import { ThemeProvider } from '@/components/ThemeProvider/ThemeProvider'
-import YandexMetrikaContainer from '@/components/YandexMetrikaContainer/YandexMetrikaContainer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
@@ -84,7 +83,7 @@ export default function RootLayout({
 
 				<Analytics />
 				<SpeedInsights />
-				<YandexMetrikaContainer enabled={analyticsEnabled} />
+				{/* <YandexMetrikaContainer enabled={analyticsEnabled} /> */}
 			</body>
 		</html>
 	)
