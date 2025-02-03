@@ -38,38 +38,6 @@ const cards = [
 	},
 ]
 
-const textAnimation = {
-	hidden: {
-		x: -100,
-		opacity: 0,
-	},
-	visible: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			type: 'spring',
-			stiffness: 100,
-			damping: 25,
-		},
-	},
-}
-
-let advantagesAnimation = {
-	hidden: {
-		x: -100,
-		opacity: 0,
-	},
-	visible: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			type: 'spring',
-			stiffness: 100,
-			damping: 25,
-		},
-	},
-}
-
 export default function Home() {
 	return (
 		<div>
