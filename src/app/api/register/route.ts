@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
 			email: newUser.email,
 		})
 	} catch (error: any) {
-		// console.log(error)
+		console.log('Registartion error ->', error)
 		return new NextResponse(
 			JSON.stringify({ message: 'Ошибка регистрации пользователя' }),
 			{ status: 500 }

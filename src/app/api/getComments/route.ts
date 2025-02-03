@@ -8,6 +8,7 @@ export async function GET() {
 		const users = await Comments.find({})
 		return NextResponse.json(users)
 	} catch (error: any) {
-		return new NextResponse('MongoDB [Comments] error', { status: 500 })
+		console.log('Get comments error -> ', error)
+		return new NextResponse('MongoDB [Comments] error', { status: 505 })
 	}
 }
