@@ -140,7 +140,7 @@ export default function Home() {
 				}}
 			/>
 			{/* TEMPORARY */}
-			<div className='max-w-3xl mx-auto bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 p-6 rounded-lg shadow-lg'>
+			<div className='max-w-3xl mx-auto bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 p-6 rounded-lg shadow-lg mb-4'>
 				<h2 className='text-2xl font-semibold text-center mb-4 text-gray-800'>
 					Внимание!
 				</h2>

@@ -2,6 +2,7 @@ import Announcement from '@/components/Announcement/Announcement'
 import Footer from '@/components/Footer/Footer'
 import Navigation from '@/components/Navigation/Navigation'
 import { ThemeProvider } from '@/components/ThemeProvider/ThemeProvider'
+import YandexMetrikaContainer from '@/components/YandexMetrikaContainer/YandexMetrikaContainer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
@@ -57,6 +58,8 @@ export const metadata: Metadata = {
 	},
 }
 
+const analyticsEnabled = !!(process.env.NODE_ENV === 'production')
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -81,6 +84,7 @@ export default function RootLayout({
 
 				<Analytics />
 				<SpeedInsights />
+				<YandexMetrikaContainer enabled={analyticsEnabled} />
 			</body>
 		</html>
 	)
