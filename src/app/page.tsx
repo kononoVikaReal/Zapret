@@ -3,7 +3,6 @@ import CommentSectionWrapper from '@/components/CommentSectionWrapper/CommentSec
 import DownloadCard from '@/components/DownloadCard/DownloadCard'
 import InfoCard from '@/components/InfoCard/InfoCard'
 import Zapret from '@/components/Zapret/Zapret'
-import * as motion from 'framer-motion/client'
 import styles from './page.module.css'
 const advantages = [
 	{
@@ -73,62 +72,17 @@ let advantagesAnimation = {
 
 export default function Home() {
 	return (
-		<motion.div
-			initial='hidden'
-			whileInView='visible'
-			viewport={{ once: true, amount: 0.2 }}
-			className=''
-		>
-			<motion.div
-				variants={textAnimation}
-				animate={{
-					scale: 0.95,
-					transition: { duration: 2 },
-				}}
-			>
+		<div>
+			<div>
 				<Zapret />
-			</motion.div>
-			<motion.span
-				variants={textAnimation}
-				className={styles.title}
-				transition={{ delay: 2 }}
-			>
-				Для чего нужен Zapret?
-			</motion.span>
-			<motion.div
-				variants={advantagesAnimation}
-				whileHover={{ scale: 1.05 }}
-				className={styles.advantagesGrid}
-			>
+			</div>
+			<span className={styles.title}>Для чего нужен Zapret?</span>
+			<div className={styles.advantagesGrid}>
 				<Advantage advantages={advantages} />
-			</motion.div>
-			<motion.div
-				variants={{
-					hidden: {
-						y: 300, // Элемент начинается снизу, за пределами экрана
-						opacity: 0, // Начальная прозрачность
-					},
-					visible: {
-						y: 0, // Элемент перемещается в обычное положение
-						opacity: 1, // Элемент становится видимым
-						scale: 1.1, // Немного увеличиваем элемент для выделения
-						rotate: 0, // Без вращения
-						transition: {
-							type: 'spring',
-							bounce: 0.4, // Пружинный эффект
-							duration: 0.8, // Длительность анимации
-							delay: 0.05, // Задержка перед началом анимации
-						},
-					},
-				}}
-				initial='hidden'
-				whileInView='visible' // Когда элемент попадет в viewport, он станет видимым
-				viewport={{ once: true, amount: 0.2 }} // Анимация срабатывает при 20% видимости элемента
-				id='download'
-				className='mt-10 mb-7'
-			>
+			</div>
+			<div className='mt-10 mb-7'>
 				<DownloadCard props={cards} />
-			</motion.div>
+			</div>
 
 			<InfoCard
 				props={{
@@ -161,6 +115,6 @@ export default function Home() {
 				</p>
 			</div>
 			<CommentSectionWrapper />
-		</motion.div>
+		</div>
 	)
 }
