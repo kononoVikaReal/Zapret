@@ -48,7 +48,7 @@ export default function Home() {
 			<div className={styles.advantagesGrid}>
 				<Advantage advantages={advantages} />
 			</div>
-			<div className='mt-10 mb-7'>
+			<div id='download' className='mt-10 mb-7'>
 				<DownloadCard props={cards} />
 			</div>
 
