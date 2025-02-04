@@ -34,23 +34,20 @@ export default async function DownloadCard({
 						{item.buttonTitle}
 					</p>
 					<div className={styles.buttonCard}>
-						<div
+						<a
 							className={classNames(styles.button, {
 								[styles.windowsButton]: item.color === 'windows',
 								[styles.linuxButton]: item.color === 'linux',
 							})}
+							target='_blank'
+							href={
+								item.color === 'windows'
+									? 'https://github.com/youtubediscord/zapret'
+									: 'https://github.com/bol-van/zapret'
+							}
 						>
-							<a
-								target='_blank'
-								href={
-									item.color === 'windows'
-										? 'https://github.com/youtubediscord/zapret'
-										: 'https://github.com/bol-van/zapret'
-								}
-							>
-								Скачать
-							</a>
-						</div>
+							<span>Скачать</span>
+						</a>
 						<span className={styles.version}>Актуальная версия {version}</span>
 					</div>
 					<h4 className={styles.footer}>

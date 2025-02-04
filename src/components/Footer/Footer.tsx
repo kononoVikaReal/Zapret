@@ -15,7 +15,11 @@ export default function Footer() {
 				/>
 			</div>
 			<div className={styles.social}>
-				<div className={styles.socialTitles}>
+				<a
+					className={styles.socialTitles}
+					target='_blank'
+					href={'https://t.me/bypassblock'}
+				>
 					<div className={styles.imageContainer2}>
 						<Image
 							className={styles.zapret}
@@ -26,15 +30,13 @@ export default function Footer() {
 							height={44}
 						/>
 					</div>
-					<a
-						className={styles.a}
-						target='_blank'
-						href={'https://t.me/bypassblock'}
-					>
-						Новости
-					</a>
-				</div>
-				<div className={styles.socialTitles}>
+					<span className={styles.a}>Новости</span>
+				</a>
+				<a
+					className={styles.socialTitles}
+					target='_blank'
+					href={'https://github.com/youtubediscord/zapret'}
+				>
 					<div className={styles.imageContainer3}>
 						<Image
 							className={styles.zapret}
@@ -45,14 +47,8 @@ export default function Footer() {
 							height={44}
 						/>
 					</div>
-					<a
-						className={styles.a}
-						target='_blank'
-						href={'https://github.com/youtubediscord/zapret'}
-					>
-						Исходный код
-					</a>
-				</div>
+					<span className={styles.a}>Исходный код</span>
+				</a>
 			</div>
 		</div>
 	)

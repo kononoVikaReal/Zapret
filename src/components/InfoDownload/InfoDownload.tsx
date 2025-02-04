@@ -27,14 +27,16 @@ export default function InfoDownload() {
 			>
 				<span>Скачать Zapret</span>
 			</div>
-			<div className={styles.instruction}>
+			<a
+				className={styles.instruction}
+				target='_blank'
+				href='https://teletype.in/@censorliber/zapret'
+			>
 				<div className={styles.image}>
 					<Image src='/instruction.svg' alt='instruction logo' fill />
 				</div>
-				<a target='_blank' href='https://teletype.in/@censorliber/zapret'>
-					Подробная инструкция
-				</a>
-			</div>
+				<span>Подробная инструкция</span>
+			</a>
 		</div>
 	)
 }
