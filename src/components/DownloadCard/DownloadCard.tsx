@@ -1,4 +1,5 @@
 import classNames from 'classnames'
+import Link from 'next/link'
 import styles from './DownloadCard.module.css'
 import { DownloadCardProps } from './DownloadCard.props'
 
@@ -34,7 +35,7 @@ export default async function DownloadCard({
 						{item.buttonTitle}
 					</p>
 					<div className={styles.buttonCard}>
-						<a
+						<Link
 							className={classNames(styles.button, {
 								[styles.windowsButton]: item.color === 'windows',
 								[styles.linuxButton]: item.color === 'linux',
@@ -42,18 +43,18 @@ export default async function DownloadCard({
 							target='_blank'
 							href={
 								item.color === 'windows'
-									? 'https://github.com/youtubediscord/zapret'
+									? 'https://github.com/youtubediscord/zapret_youtube_discord'
 									: 'https://github.com/bol-van/zapret'
 							}
 						>
-							<span>Скачать</span>
-						</a>
+							Скачать
+						</Link>
 						<span className={styles.version}>Актуальная версия {version}</span>
 					</div>
 					<h4 className={styles.footer}>
-						<a target='_blank' href='https://t.me/bypassblock'>
+						<Link target='_blank' href='https://t.me/bypassblock'>
 							Другие версии
-						</a>
+						</Link>
 					</h4>
 				</div>
 			))}

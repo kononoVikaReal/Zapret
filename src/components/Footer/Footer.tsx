@@ -25,7 +25,7 @@ export default function Footer() {
 							className={styles.zapret}
 							src='/telegram.png'
 							alt='telegram logo'
-							layout='responsive' // Используйте layout="responsive" для адаптивного изображения
+							layout='responsive'
 							width={44}
 							height={44}
 						/>
