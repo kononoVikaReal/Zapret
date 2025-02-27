@@ -63,7 +63,14 @@ export default async function DownloadCard({
 						</span>
 					</div>
 					<h4 className={styles.footer}>
-						<Link target='_blank' href='https://t.me/bypassblock'>
+						<Link
+							target='_blank'
+							href={
+								item.color === 'windows'
+									? 'https://t.me/bypassblock'
+									: 'https://github.com/bol-van/zapret/releases'
+							}
+						>
 							Другие версии
 						</Link>
 					</h4>
