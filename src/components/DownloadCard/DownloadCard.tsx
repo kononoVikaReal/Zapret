@@ -8,11 +8,19 @@ export default async function DownloadCard({
 }: {
 	props: DownloadCardProps[]
 }) {
+	// Временно отключен парсинг
 	// Получаем данные версии через fetch
-	const response = await fetch(
-		'https://filedn.eu/lFS6h5cBEsru02lgr5VwkTJ/Zapret/version.txt'
+	// const response = await fetch(
+	// 	'https://filedn.eu/lFS6h5cBEsru02lgr5VwkTJ/Zapret/version.txt'
+	// )
+	// const version = await response.text()
+
+	const version = '10.4.0' // Временная заглушка для версии под Windows
+	// Парсим версию для Linux
+	const linuxResponse = await fetch(
+		'https://api.github.com/repos/bol-van/zapret/tags'
 	)
-	const version = await response.text() // Ждём получения версии
+	const linuxVersion = (await linuxResponse.json())[0].name.replace('v', '')
 
 	return (
 		<div className={styles.cardContainer}>
@@ -49,7 +57,10 @@ export default async function DownloadCard({
 						>
 							Скачать
 						</Link>
-						<span className={styles.version}>Актуальная версия {version}</span>
+						<span className={styles.version}>
+							Актуальная версия{' '}
+							{item.color === 'windows' ? version : linuxVersion}
+						</span>
 					</div>
 					<h4 className={styles.footer}>
 						<Link target='_blank' href='https://t.me/bypassblock'>
